@@ -1,0 +1,88 @@
+import React, { useState } from 'react';
+import './LoginForm.css'; // Import the CSS file for styling
+
+const LoginForm = () => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    // Perform your authentication logic here
+    // For simplicity, let's just check if both username and password are non-empty
+    if (username && password) {
+      setLoggedIn(true);
+      alert('Login successful!');
+    } else {
+      alert('Please enter both username and password.');
+    }
+  };
+
+  return (
+    <div className="login-container">
+      {loggedIn ? (
+        <p className="welcome-message">Welcome, {username}!</p>
+      ) : (
+        <form>
+          <label>
+            Username:
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              className="input-field"
+            />
+          </label>
+          <br />
+          <label>
+            Password:
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="input-field"
+            />
+          </label>
+          <br />
+          <button type="button" onClick={handleLogin} className="login-button">
+            Login
+          </button>
+        </form>
+      )}
+    </div>
+  );
+};
+
+export default LoginForm;                                   
+
+
+CSS CODE:
+.login-container {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.welcome-message {
+  font-size: 18px;
+  color: green;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.login-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+

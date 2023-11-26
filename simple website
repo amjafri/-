@@ -1,0 +1,94 @@
+simple html website<html>
+<head>
+<title>My Porfolio</title>
+<style>
+h2{
+text-align:center;
+color:black;
+}
+body{
+background-color:beige;
+text-align:center;
+}
+table {
+ font-family: arial, sans-serif;
+ border-collapse: collapse;
+ width: 100%;
+}
+td, th {
+ border: 1px solid #dddddd;
+ text-align: left;
+ padding: 8px;
+}
+tr:nth-child(even) {
+ background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h2>AISHWARYA<br><br>
+<img src ="me.jpg" width = "250" height = "250"><br><br></h2>
+<hr>
+<h3>PERSONAL DETAILS</h3>
+<p>NAME : AISHWARYA ANGELEENA<br><br>
+ FATHER'S NAME : Williams Paul Raj<br><br>
+ MOTHER'S NAME : Shri Dhevi<br><br>
+ DOB : 29-09-2001<br><br>
+ SCHOOLING : Velammal Vidhyashram<br><br>
+ COLLEGE : BSA Crescent Institue Of Science And Technology<br><br>
+ DEGREE : B.Tech Computer Science And Engineering<br><br>
+ BLOOD GROUP : O+<br><br>
+ EMAIL : <a href="aishwaryawilliams@gmail.com">aishwaryawilliams@gmail.com</a> <br><br>
+ PHONE : +91 9840438936<br><br><br>
+<hr>
+<h3>CERTIFICATES ACQUIRED</h3>
+<table>
+<tr>
+<th>SNO</th>
+<th>COURSE</th>
+<th>ISSUED BY</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Python For Data Science And AI</td>
+<td>Courseara</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Data Science Methadology</td>
+<td>Courseara</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Enterprise Design Thinking -Team Essentials For AI</td>
+<td>IBM</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Enterprise Design Thinking -Practitioner</td>
+<td>IBM</td>
+</tr>
+<tr>
+<td>5</td>
+<td>PCEP Certificate</td>
+<td>Python Institute</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Python For Data Science</td>
+<td>IBM</td>
+</tr>
+</table>
+<hr>
+<h3>PROGRAMMING LANGUAGES KNOWN:</h3>
+<ul>
+<li>C</li>
+<li>C++</li>
+<li>Java</li>
+<li>Html</li>
+<li>CSS</li>
+<li>Xml</li>
+<li>Java Script</li>
+</ul>
+</body>
+</html>

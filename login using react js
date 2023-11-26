@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './LoginForm.css'; // Import the CSS file for styling
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
@@ -18,9 +17,9 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="login-container">
+    <div>
       {loggedIn ? (
-        <p className="welcome-message">Welcome, {username}!</p>
+        <p>Welcome, {username}!</p>
       ) : (
         <form>
           <label>
@@ -29,7 +28,6 @@ const LoginForm = () => {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="input-field"
             />
           </label>
           <br />
@@ -39,11 +37,10 @@ const LoginForm = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="input-field"
             />
           </label>
           <br />
-          <button type="button" onClick={handleLogin} className="login-button">
+          <button type="button" onClick={handleLogin}>
             Login
           </button>
         </form>
@@ -52,37 +49,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;                                   
-
-
-CSS CODE:
-.login-container {
-  max-width: 300px;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.welcome-message {
-  font-size: 18px;
-  color: green;
-}
-
-.input-field {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-  box-sizing: border-box;
-}
-
-.login-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-
+export default LoginForm;
